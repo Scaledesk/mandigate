@@ -1,0 +1,16 @@
+.mandi-logo{
+    font-family: 'Montserrat', sans-serif;
+    line-height:1px;
+    color: #ffffff;
+    display: inline-block;
+}
+.mandi-footer{
+   background-color: rgba(25, 25, 25, 0.88);
+    padding-top: 15px;
+}
+.copyright{
+    color: #7D939E;
+}
+.title-veg h2{
+    color: black;
+}
