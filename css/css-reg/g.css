@@ -1,0 +1,58 @@
+.galignright{
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.galignleft{
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.gendr1{
+  margin-left: 120px!important;
+ 
+
+}
+.gendr2{
+  margin-left: 80px!important;
+ 
+
+}
+.smlltxt{text-align: center;
+	color:red;
+}
+
+@media(max-width:767px) {
+    /* For mobile phones: */
+   .gendr1{  margin-left: 70px!important;
+        width: 30%;
+    }
+
+.gendr2{
+  margin-left: 50px!important;
+ }
+
+.smlltxt1{text-align: center;
+	color:#ffffff;
+	font-size: 20px!important;
+}
+
+@media(max-width:767px) {
+
+.gndr{
+
+	margin-top: 15px!important;
+	margin-left: 18px;
+}}
+
+@media(max-width:1024px) {
+
+.gndr{
+
+	margin-top: 45px!important;
+	margin-left: 25px;
+}
+
+.mrgn{
+	margin-top: 55px!important;
+	padding-top: 30px;
+}}
