@@ -199,6 +199,220 @@
         </div>
     </div>
     <!-- end nav -->
+    <!-- body-->
+    <section class="main-container col1-layout">
+        <div class="main container">
+            <div class="col-main">
+                <div class="cart wow bounceInUp animated">
+                    <div class="page-title">
+                        <h2>Shopping Cart</h2>
+                    </div>
+                    <div class="table-responsive">
+                        <form method="post" action="#updatePost/">
+                            <input type="hidden" value="Vwww7itR3zQFe86m" name="form_key">
+                            <fieldset>
+                                <table class="data-table cart-table" id="shopping-cart-table">
+                                    <colgroup>
+                                        <col width="1">
+                                        <col>
+                                        <col width="1">
+                                        <col width="1">
+                                        <col width="1">
+                                        <col width="1">
+                                        <col width="1">
+                                    </colgroup>
+                                    <thead>
+                                    <tr class="first last">
+                                        <th rowspan="1">&nbsp;</th>
+                                        <th rowspan="1"><span class="nobr">Product Name</span></th>
+                                        <th rowspan="1"></th>
+                                        <th colspan="1" class="a-center"><span class="nobr">Unit Price</span></th>
+                                        <th class="a-center" rowspan="1">Qty</th>
+                                        <th colspan="1" class="a-center">Subtotal</th>
+                                        <th class="a-center" rowspan="1">&nbsp;</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tr class="first last">
+                                        <td class="a-right last" colspan="50"><button onclick="setLocation('#')" class="button btn-continue" title="Continue Shopping" type="button"><span><span>Continue Shopping</span></span></button>
+                                            <button class="button btn-update" title="Update Cart" value="update_qty" name="update_cart_action" type="submit"><span><span>Update Cart</span></span></button>
+                                            <button id="empty_cart_button" class="button btn-empty" title="Clear Cart" value="empty_cart" name="update_cart_action" type="submit"><span><span>Clear Cart</span></span></button></td>
+                                    </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    <tr class="first odd">
+                                        <td class="image"><a class="product-image" title="Sample Product" href="#/women-s-crepe-printed-black/"><img width="75" height="75" alt="Sample Product" src="../products-images/product1.jpg"></a></td>
+                                        <td><h2 class="product-name"> <a href="#/women-s-crepe-printed-black/">Sample Product</a> </h2></td>
+                                        <td class="a-center"><a title="Edit item parameters" class="edit-bnt" href="#configure/id/15945/"></a></td>
+                                        <td class="a-right"><span class="cart-price"> <span class="price">$70.00</span> </span></td>
+                                        <td class="a-center movewishlist"><input maxlength="12" class="input-text qty" title="Qty" size="4" value="1" name="cart[15945][qty]"></td>
+                                        <td class="a-right movewishlist"><span class="cart-price"> <span class="price">$70.00</span> </span></td>
+                                        <td class="a-center last"><a class="button remove-item" title="Remove item" href="#"><span><span>Remove item</span></span></a></td>
+                                    </tr>
+                                    <tr class="last even">
+                                        <td class="image"><a class="product-image" title="Sample Product" href="#women-s-u-tank-top/"><img width="75" height="75" alt="Sample Product" src="../products-images/product2.jpg"></a></td>
+                                        <td><h2 class="product-name"> <a href="#women-s-u-tank-top/">Sample Product</a> </h2></td>
+                                        <td class="a-center"><a title="Edit item parameters" class="edit-bnt" href="#configure/id/15946/"></a></td>
+                                        <td class="a-right"><span class="cart-price"> <span class="price">$7.38</span> </span></td>
+                                        <td class="a-center movewishlist"><input maxlength="12" class="input-text qty" title="Qty" size="4" value="1" name="cart[15946][qty]"></td>
+                                        <td class="a-right movewishlist"><span class="cart-price"> <span class="price">$7.38</span> </span></td>
+                                        <td class="a-center last"><a class="button remove-item" title="Remove item" href="#"><span><span>Remove item</span></span></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- BEGIN CART COLLATERALS -->
+                    <div class="cart-collaterals row">
+                        <div class="col-sm-4">
+                            <div class="shipping">
+                                <h3><span>Estimate Shipping and Tax</span></h3>
+                                <div class="shipping-form">
+                                    <form id="shipping-zip-form" method="post" action="#estimatePost/">
+                                        <p>Enter your destination to get a shipping estimate.</p>
+                                        <ul class="form-list">
+                                            <li>
+                                                <label for="region_id">State/Province</label>
+                                                <div class="input-box">
+                                                    <select style="" title="State/Province" name="region_id" id="region_id" defaultvalue="" class="required-entry validate-select">
+                                                        <option value="">Please select region, state or province</option>
+                                                        
+                                                    </select>
+                                                    <input type="text" style="display:none;" class="input-text required-entry" title="State/Province" value="" name="region" id="region">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label for="postcode">Zip/Postal Code</label>
+                                                <div class="input-box">
+                                                    <input type="text" value="" name="estimate_postcode" id="postcode" class="input-text validate-postcode">
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <!--buttons-set11-->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="discount">
+                                <form method="post" action="http://newsmartwave.net/magento/kallyas/index.php/checkout/cart/couponPost/" >
+
+                                    <h3><span>Bank Details</span></h3>
+                                </form><form method="post" action="#couponPost/" >
+                                <label for="coupon_code">Upload Your Bank Details</label>
+                                <input type="hidden" value="0" id="remove-coupone" name="remove">
+                                <input type="text" value="" name="coupon_code" id="coupon_code" class="input-text fullwidth">
+                                <button value="Apply Coupon" onclick="discountForm.submit(false)" class="button coupon " title="Apply Coupon" type="button"><span>Upload</span></button>
+
+                            </form>
+                            </div> </div>
+
+                        <div class="totals col-sm-4">
+                            <h3><span>Shopping Cart Total</span></h3>
+                            <div class="inner">
+                                <table class="table shopping-cart-table-total" id="shopping-cart-totals-table">
+                                    <colgroup>
+                                        <col>
+                                        <col width="1">
+                                    </colgroup>
+                                    <tfoot>
+                                    <tr>
+                                        <td colspan="1" class="a-left" style=""><strong>Grand Total</strong></td>
+                                        <td class="a-right" style=""><strong><span class="price">$77.38</span></strong></td>
+                                    </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="1" class="a-left" style=""> Subtotal </td>
+                                        <td class="a-right" style=""><span class="price">$77.38</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="checkout">
+                                    <li>
+                                        <button onclick="window.location='http://demo.magikthemes.com/index.php/Micrablue/checkout/onepage/';" class="button btn-proceed-checkout" title="Proceed to Checkout" type="button"><span>Proceed to Checkout</span></button>
+                                    </li>
+                                    <br>
+                                    <li><a title="Checkout with Multiple Addresses" href="multiple_addresses.html">Checkout with Multiple Addresses</a> </li>
+                                    <br>
+                                </ul>
+                            </div>
+                            <!--inner-->
+
+                        </div>
+                    </div>
+
+                    <!--cart-collaterals-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end body-->
+    <!--footer-->
+    <div class="footer-middle mandi-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <h4>Menu</h4>
+                    <ul class="links">
+                        <li class="first"><a href="#" title="Contact us">Home</a></li>
+                        <li><a href="#" title="About us">About Us</a></li>
+                        <li><a href="#" title="faq">Vegetables</a></li>
+                        <li><a href="#" title="Popular Searches">Fruits</a></li>
+                        <li class="last"><a href="#" title="Where is my order?">Grains</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h4>Services</h4>
+                    <ul class="links">
+                        <li class="first"><a title="Your Account" href="#">Search</a></li>
+                        <li><a title="Information" href="#">Customer Service</a></li>
+                        <li><a title="Addresses" href="#">FAQ</a></li>
+                        <li><a title="Addresses" href="#">Account</a></li>
+                        <li class="last"><a title="Orders History" href="#">Order History</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <h4>Contact us</h4>
+                    <div class="contacts-info">
+                        <address>
+                            <i class="add-icon">&nbsp;</i>ThemesGround, 789 Main rd, <br>Anytown, CA 12345 USA
+
+                        </address>
+                        <div class="phone-footer"><i class="phone-icon">&nbsp;</i>+(888) 123-4567</div>
+                        <div class="email-footer"><i class="email-icon">&nbsp;</i> <a href="mailto:support@magikcommerce.com">nexus@themesground.com</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="copyright">&copy; 2016 MANDIGATE. All Rights Reserved.</div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="social">
+                        <ul>
+                            <li class="fb"><a href="#"></a></li>
+                            <li class="tw"><a href="#"></a></li>
+                            <li class="googleplus"><a href="#"></a></li>
+                            <li class="youtube"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
@@ -206,7 +420,7 @@
     <script type="text/javascript" src="js/revslider.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-menu.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-
+    <script type="text/javascript" src="js/header.js"></script>
     <script type='text/javascript'>
         jQuery(document).ready(function(){
             jQuery('#rev_slider_4').show().revolution({
