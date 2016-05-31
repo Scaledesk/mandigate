@@ -14,3 +14,30 @@
 .title-veg h2{
     color: black;
 }
+#navbar-main {
+    overflow: hidden;
+    z-index: 999;
+    /* Added `.affix-top` class css when the element is top */
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+    /* Added `.affix-bottom` class css when the element is footer */
+}
+#navbar-main.affixed-top{
+    background: black;
+}
+#navbar-main.affix {
+    background: black;
+    color: darkred;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#navbar-main.affix-bottom {
+    background: red;
+}
+.toplinks{
+    margin-right: 0px !important;
+}
+#thm-slideshow{
+    margin-top: 1px;
+}
+

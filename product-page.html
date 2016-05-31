@@ -41,7 +41,7 @@
 <div id="page">
 
     <!-- Header -->
-    <div class="header-banner">
+    <div class="header-banner ">
         <div class="assetBlock">
             <div style="height: 20px; overflow: hidden;" id="slideshow">
                 <p style="display: block;">Super Market! - <span>50%</span> OFF on fresh Vegetables &gt;</p>
@@ -51,7 +51,7 @@
     </div>
 
     <header class="header-container">
-        <div class="header-top">
+        <div class="header-top ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
@@ -71,7 +71,7 @@
                                     <div style="display: none;" class="top-cart-content arrow_box">
                                         <div class="block-subtitle">Recently added item(s)</div>
                                         <ul id="cart-sidebar" class="mini-products-list">
-                                            <li class="item even"> <a class="product-image" href="product_detail.html" title="Downloadable Product "><img alt="Downloadable Product " src="../products-images/product1.jpg" width="80"></a>
+                                            <li class="item even"> <a class="product-image" href="product_detail.html" title="Downloadable Product "><img alt="Downloadable Product " src="..//products-images/product1.jpg" width="80"></a>
                                                 <div class="detail-item">
                                                     <div class="product-details"> <a href="#" title="Remove This Item" onClick="" class="btn-remove1">Remove This Item</a> <a class="btn-edit" title="Edit item" href="#">Edit item</a>
                                                         <p class="product-name"> <a href="product_detail.html" title="Sample Product">Sample Product</a> </p>
@@ -124,19 +124,6 @@
                             </div>
                         </div>
                         <!-- End Header Top Links -->
-
-
-                        <div class="collapse navbar-collapse">
-                            <form class="navbar-form" role="search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                  <span class="input-group-btn">
-                  <button type="reset" class="btn btn-default"> <span class="glyphicon glyphicon-remove"> <span class="sr-only">Close</span> </span> </button>
-                  <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search"> <span class="sr-only">Search</span> </span> </button>
-                  </span> </div>
-                            </form>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -145,7 +132,7 @@
     <!-- end header -->
 
     <!-- Navbar -->
-    <div class="navbar navbar-default">
+    <div class="navbar navbar-default" id="navbar-main">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -156,6 +143,8 @@
                 <a class="navbar-brand" href="">MANDIGATE</a>
             </div>
             <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+
                 <ul class="nav navbar-nav navbar-right">
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -268,7 +257,7 @@
                                                 <li> <a class="link-wishlist" href="wishlist.html"><span>Add to Wishlist</span></a></li>
                                                 <li><span class="separator">|</span> <a class="link-compare" href="compare.html"><span>Add to Compare</span></a></li>
                                             </ul>
-                                            <p class="email-friend"><a href="#" class=""><span>Email to a Friend</span></a></p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +265,7 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>
@@ -349,6 +338,7 @@
 <script type="text/javascript" src="js/revslider.js"></script>
 <script type="text/javascript" src="js/jquery.mobile-menu.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
 <script type='text/javascript'>
     jQuery(document).ready(function(){
         jQuery('#rev_slider_4').show().revolution({
