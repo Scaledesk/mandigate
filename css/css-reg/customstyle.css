@@ -8,7 +8,7 @@ html {
 
 body { background-image: url("https://images.unsplash.com/31/RpgvvtYAQeqAIs1knERU_vegetables.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f7452e128d0aacc006adab4b43d46bc8") ;
 /*  background: #f5f5f5;*/ 
- 
+ background-size: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -26,7 +26,7 @@ a:hover {
 
 .form {
   background: #000000!important;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 40px;
   max-width: 700px;
   margin: 10px auto;
@@ -49,7 +49,7 @@ a:hover {
   text-decoration: none;
  padding-top: 6px;
  padding-bottom: 6px;
-  padding-left: 5px;
+  padding-left: 20px;
   padding-right: 5px;
   background: rgba(160, 179, 176, 0.25);
   color: #a0b3b0;
