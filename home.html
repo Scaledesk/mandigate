@@ -17,6 +17,12 @@
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!--Header links-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/css-header/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/css-header/style.css"> <!-- Resource style -->
+    <script src="js/js-header/modernizr.js"></script> <!-- Modernizr -->
+
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -132,59 +138,23 @@
     <!-- end header -->
 
     <!-- Navbar -->
-    <div class="navbar navbar-default" id="navbar-main">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="">MANDIGATE</a>
-            </div>
-            <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <header class="cd-main-header animate-search">
+        <div class="cd-logo"><a href="#0">
+            <img src="images/img-header/cd-logo.svg" alt="Logo"></a></div>
 
+        <nav class="cd-main-nav-wrapper m-nav">
+            <a href="#search" class="cd-search-trigger cd-text-replace">Search</a>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" class="form-control col-sm-8" placeholder="Search">
-                        </div>
-                    </form>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Vegetable
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)">Potato</a></li>
-                            <li><a href="javascript:void(0)">Onion</a></li>
-                            <li><a href="javascript:void(0)">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Fruits
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)">Banana</a></li>
-                            <li><a href="javascript:void(0)">Apple</a></li>
-                            <li><a href="javascript:void(0)">Mossambi</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Grains
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)">Rice</a></li>
-                            <li><a href="javascript:void(0)">Daal</a></li>
-                            <li><a href="javascript:void(0)">Other</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+            <ul class="cd-main-nav">
+                <li><a href="#0">Home</a></li>
+                <li><a href="#0">Vegetables</a></li>
+                <li><a href="#0">Fruits</a></li>
+                <li><a href="#0">Grains</a></li>
+            </ul> <!-- .cd-main-nav -->
+        </nav> <!-- .cd-main-nav-wrapper -->
+
+        <a href="#0" class="cd-nav-trigger cd-text-replace">Menu<span></span></a>
+    </header>
     <!-- end nav -->
     <!-- Slider -->
     <div id="thm-slideshow" class="thm-slideshow">
@@ -773,5 +743,8 @@
             });
         });
     </script>
+<script src="js/js-header/jquery-2.1.4.js"></script>
+<script src="js/js-header/main.js"></script> <!-- Resource jQuery -->
+
 </body>
 </html>
