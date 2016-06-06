@@ -3732,9 +3732,9 @@ small {
     overflow: hidden;
     padding: 0px;
     width: 100%;
-    margin: 25px auto;
+   /* margin: 25px auto;*/
     padding: 35px 0;
-    background: none repeat scroll 0 0 #48c46a;
+    background: none repeat scroll 0 0 #A9C056;
     border-top: 1px #e2e2e2 solid;
     margin-bottom: 0px;
 }
