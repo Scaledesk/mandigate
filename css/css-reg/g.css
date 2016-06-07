@@ -7,14 +7,21 @@
 	margin-bottom: 40px;
 }
 
+.btntxt{
+	font-style: bold!important;
+	font-size: 16px!important;
+}
 .form1{
-  background: #000000!important;
-  opacity: 0.7;
+  background: rgba(0,0,0,0.63)!important;
   padding: 20px 40px 40px 40px;
   max-width: 600px;
   margin: 10px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.txtwrp{
+	line-height: 1.6;
+	font-size: 0.875rem;
 }
 
 .mrgn{
@@ -23,7 +30,8 @@
 .col1{
 	color: white;
 }
-.btn-g{border-radius: 0!important;
+.btn_g{border-radius: 0!important;
+	font-size: 18px;
 
 }
 .centr1{
@@ -60,8 +68,13 @@
 }
 .smlltxt{text-align: center;
 	color:red;
+	font-size: 20px;
 }
 
+.smlltxt1{text-align: center;
+	color:#ffffff;
+	font-size: 35px!important;
+}
 
 @media(max-width:767px) {
     /* For mobile phones: */
@@ -75,7 +88,8 @@
 
 .smlltxt1{text-align: center;
 	color:#ffffff;
-	font-size: 20px!important;
+	font-size: 25px!important;
+}
 }
 
 
@@ -98,7 +112,11 @@
 .mrgn{
 	margin-top: 55px!important;
 	padding-top: 30px;
-}}
+}
+
+}
+
+
 .content12{
 	font-family: monospace;
 	font-size: 80px;
