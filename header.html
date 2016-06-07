@@ -17,6 +17,12 @@
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!--Header links-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/css-header/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/css-header/style.css"> <!-- Resource style -->
+    <script src="js/js-header/modernizr.js"></script> <!-- Modernizr -->
+
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -40,7 +46,7 @@
 <body>
 <div id="page">
 
-    <!-- Header -->
+    <!-- Header green -->
     <div class="header-banner ">
         <div class="assetBlock">
             <div style="height: 20px; overflow: hidden;" id="slideshow">
@@ -49,7 +55,8 @@
             </div>
         </div>
     </div>
-
+    <!-- end header -->
+    <!-- header black -->
     <header class="header-container">
         <div class="header-top ">
             <div class="container">
@@ -124,19 +131,6 @@
                             </div>
                         </div>
                         <!-- End Header Top Links -->
-
-
-                        <div class="collapse navbar-collapse">
-                            <form class="navbar-form" role="search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                  <span class="input-group-btn">
-                  <button type="reset" class="btn btn-default"> <span class="glyphicon glyphicon-remove"> <span class="sr-only">Close</span> </span> </button>
-                  <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search"> <span class="sr-only">Search</span> </span> </button>
-                  </span> </div>
-                            </form>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -145,60 +139,80 @@
     <!-- end header -->
 
     <!-- Navbar -->
-    <div class="navbar navbar-default" id="navbar-main">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="">MANDIGATE</a>
-            </div>
-            <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <header class="cd-main-header animate-search">
+        <div class="cd-logo"><a href="#0">
+            <img src="images/img-header/cd-logo.svg" alt="Logo"></a></div>
 
+        <nav class="cd-main-nav-wrapper m-nav">
+            <a href="#search" class="cd-search-trigger cd-text-replace">Search</a>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" class="form-control col-sm-8" placeholder="Search">
-                        </div>
-                    </form>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Vegetable
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)">Potato</a></li>
-                            <li><a href="javascript:void(0)">Onion</a></li>
-                            <li><a href="javascript:void(0)">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Fruits
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)">Banana</a></li>
-                            <li><a href="javascript:void(0)">Apple</a></li>
-                            <li><a href="javascript:void(0)">Mossambi</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Grains
-                            <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)">Rice</a></li>
-                            <li><a href="javascript:void(0)">Daal</a></li>
-                            <li><a href="javascript:void(0)">Other</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+            <ul class="cd-main-nav">
+                <li><a href="#0">Home</a></li>
+                <li><a href="#0">Vegetables</a></li>
+                <li><a href="#0">Fruits</a></li>
+                <li><a href="#0">Grains</a></li>
+            </ul> <!-- .cd-main-nav -->
+        </nav> <!-- .cd-main-nav-wrapper -->
+
+        <a href="#0" class="cd-nav-trigger cd-text-replace">Menu<span></span></a>
+    </header>
     <!-- end nav -->
+    <div id="search" class="cd-main-search">
+        <form>
+            <input type="search" placeholder="Search...">
+
+            <div class="cd-select">
+                <span>in</span>
+                <select name="select-category">
+                    <option value="all-categories">all Categories</option>
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                </select>
+                <span class="selected-value">all Categories</span>
+            </div>
+        </form>
+
+        <div class="cd-search-suggestions">
+            <div class="news">
+                <h3>News</h3>
+                <ul>
+                    <li>
+                        <a class="image-wrapper" href="#0"><img src="images/img-header/placeholder.png" alt="News image"></a>
+                        <h4><a class="cd-nowrap" href="#0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+                        <time datetime="2016-01-12">Feb 03, 2016</time>
+                    </li>
+
+                    <li>
+                        <a class="image-wrapper" href="#0"><img src="images/img-header/placeholder.png" alt="News image"></a>
+                        <h4><a class="cd-nowrap" href="#0">Incidunt voluptatem adipisci voluptates fugit beatae culpa eum, distinctio, assumenda est ad</a></h4>
+                        <time datetime="2016-01-12">Jan 28, 2016</time>
+                    </li>
+
+                    <li>
+                        <a class="image-wrapper" href="#0"><img src="images/img-header/placeholder.png" alt="News image"></a>
+                        <h4><a class="cd-nowrap" href="#0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, esse.</a></h4>
+                        <time datetime="2016-01-12">Jan 12, 2016</time>
+                    </li>
+                </ul>
+            </div> <!-- .news -->
+
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#0">Find a store</a></li>
+                    <li><a href="#0">Accessories</a></li>
+                    <li><a href="#0">Warranty info</a></li>
+                    <li><a href="#0">Support</a></li>
+                    <li><a href="#0">Contact us</a></li>
+                </ul>
+            </div> <!-- .quick-links -->
+        </div> <!-- .cd-search-suggestions -->
+
+        <a href="#0" class="close cd-text-replace">Close Form</a>
+    </div> <!-- .cd-main-search -->
+
+    <div class="cd-cover-layer"></div> <!-- cover main content when search form is open -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
@@ -279,5 +293,7 @@
             });
         });
     </script>
+    <script src="js/js-header/jquery-2.1.4.js"></script>
+    <script src="js/js-header/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

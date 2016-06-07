@@ -10,11 +10,21 @@
 .form1{
   background: #000000!important;
   opacity: 0.7;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
   max-width: 600px;
   margin: 10px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.mrgn{
+	margin-left: 125px;
+}
+.col1{
+	color: white;
+}
+.btn-g{border-radius: 0!important;
+
 }
 .centr1{
 	padding-left: 10px;
@@ -22,12 +32,14 @@
 	padding-right: 105px;
 	margin-left:  180px;
 	margin-bottom: 5px;
+
+	color:white;
 }
 .center2{
 	padding-left: 10px;
 	padding-right: 15px;
 	padding-right: 10px;
-	margin-left:  180px;
+	margin-left: 300px;
 	margin-bottom: 5px
 }
 .btn1{
@@ -90,4 +102,7 @@
 .content12{
 	font-family: monospace;
 	font-size: 80px;
+}
+.h2_g{
+	margin-bottom: 30px!important;
 }

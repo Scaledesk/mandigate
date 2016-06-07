@@ -21,7 +21,7 @@ a {
   transition: .5s ease;
 }
 a:hover {
-  color: #48C46A!important;
+  color: white;
 }
 
 .form {
@@ -79,7 +79,7 @@ p {
   text-align: center;
   color: #ffffff!important;
   font-weight: 100;
-  margin: 0 0 40px;
+ 
 }
 
 label .req {
